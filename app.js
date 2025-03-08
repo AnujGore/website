@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', function() {
       const page = this.getAttribute('data-page'); // Get the data-page attribute value
       if (page) {
-        window.location.href = `webpages/${page}.html`; // Construct the URL
+        window.location.href = `${page}.html`; // Construct the URL
       } else {
         console.error("Button missing data-page attribute");
       }
