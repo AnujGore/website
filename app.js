@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (title) {
     title.addEventListener('click', function() {
-      window.location.href = '../index.html'; // Navigate back to index.html
+      window.location.href = './index.html'; // Navigate back to index.html
     });
   }
 });
