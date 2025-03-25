@@ -47,7 +47,29 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 
-  // Blog 
+  // Blog
+
+  const blogContainer = document.getElementById("blogContainer");
+
+  fetch("blog_posts.json")
+  .then(response => response.json())
+  .then(posts => {
+    blogContainer.innerHTML = "";
+    posts.forEach(post => {
+        const postElement = document.createElement("div");
+        postElement.classList.add("blog-post");
+
+        postElement.innerHTML = `
+            <h3 style = "text-align: center">${post.title}</h3>
+            <p>${post.content}</p>
+            <hr>`;
+
+        blogContainer.appendChild(postElement);
+        });
+    }).catch(error => {
+        blogContainer.innerHTML = "<p>Error loading blog posts.</p>";
+        console.error("Error fetching blog posts:", error);
+    });
 
 
   //For books
