@@ -20,7 +20,9 @@ const books = [
     { cover: "assets/catcher_in_the_rye.jpg", rating: 3},
     { cover: "assets/animal-farm.jpg", rating: 4.5},
     { cover: "assets/1984.jpg", rating: 4.5},
-    { cover: "assets/to_kill_a_mockingbird.jpg", rating: 3.5}
+    { cover: "assets/to_kill_a_mockingbird.jpg", rating: 3.5},
+    { cover: "assets/a_long_way_down.jpg", rating: 1},
+    { cover: "assets/sapiens.jpg", rating: 4}
 ];
 
 
