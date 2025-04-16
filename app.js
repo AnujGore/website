@@ -61,8 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         postElement.innerHTML = `
             <h3 style = "text-align: center">${post.title}</h3>
-            <p>${post.content}</p>
-            <hr>`;
+            <p>${post.content}</p>`;
 
         blogContainer.appendChild(postElement);
         });

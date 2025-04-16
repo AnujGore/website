@@ -1,44 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuj Gore</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anuj Gore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .blog-post {
+      @apply bg-white rounded-xl p-6 mb-8 max-w-3xl mx-auto;
+    }
+
+    .blog-post h3 {
+      @apply text-2xl font-semibold -mt-8 text-blue-800 text-center;
+    }
+
+    .blog-post p {
+      @apply mt-6 text-gray-700 leading-relaxed;
+    }
+
+  </style>
 </head>
 
+<body class=" bg-#FEF9FF items-center justify-center font-sans">
 
-<body>
-    <header>
-        <h1 href = "index.html" id="title">Anuj</h1>
-        <nav>
-            <ul>
-                <li><a href="blog.html" class="nav-button" id="blog-btn">Blog</a></li>
-                <li><a href="projects.html" class="nav-button" id="projects-btn">Projects</a></li>
-                <li><a href="contact.html" class="nav-button" id="contact-btn">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-[#3066BE]">Anuj</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="blog.html" class="text-gray-700 hover:text-blue-600">Blog</a></li>
+          <li><a href="projects.html" class="text-gray-700 hover:text-blue-600">Projects</a></li>
+          <li><a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section>
+  <!-- Blog Header -->
+  <section class="text-center py-12 px-4">
+    <h1 class="text-3xl sm:text-3xl md:text-4xl leading-tight mb-6"> My Blog</h1>
+  </section>
 
-            <h2>My Blog</h2>
+  <!-- Blog Posts Container -->
+  <section id="blogContainer" class="px-4 pb-20">
+    <!-- Posts will be inserted here by app.js -->
+  </section>
 
-            <p style="font-size: smaller;">If you would like to read my book reviews click <a href="book_reviews.html">here.</a></p>
-
-            <div class="blog-container" id = "blogContainer">
-
-                I am still building this!
-            </div>
-
-        </section>
-
-    </main>
-    
-    <script src="app.js"></script>
-
-
+  <script src="app.js"></script>
 </body>
-
-
 </html>
