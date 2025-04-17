@@ -1,35 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" class="min-h-screen flex flex-col">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuj Gore</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anuj Gore | Book Reviews</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+<body class="bg-white text-gray-800 font-sans">
 
-<body>
-    <header>
-        <h1 href="index.html" id="title">Anuj</h1>
-        <nav>
-            <ul>
-                <li><a href="blog.html" class="nav-button" id="blog-btn">Blog</a></li>
-                <li><a href="projects.html" class="nav-button" id="projects-btn">Projects</a></li>
-                <li><a href="contact.html" class="nav-button" id="contact-btn">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-[#3066BE]">Anuj</a>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="blog.html" class="text-gray-700 hover:text-blue-600">Blog</a></li>
+          <li><a href="projects.html" class="text-gray-700 hover:text-blue-600">Projects</a></li>
+          <li><a href="contact.html" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-6 py-10 max-w-6xl mx-auto">
+    <section class="text-center mb-10">
+      <h2 class="text-3xl sm:text-2xl font-semibold mb-4 text-[#090C9B]">Book Reviews</h2>
+    </section>
+
+    <section>
+        <div id="bookGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto justify-items-center max-w-7xl px-4">
+            <!-- JS will populate cards here -->
+        </div>
+    </section>
+  </main>
 
 
-    <main>
-        <section>
-            <h2>Book Reviews</h2>
-            <div class="bookGrid" id="bookGrid">
-            </div>
-        </section>
-    </main>
+  <footer class="bg-white mt-12">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-500">
+      &copy; 2025 Anuj Gore. All rights reserved.
+    </div>
+  </footer>
 
-
-    <script src="app.js"></script>
+  <!-- Script -->
+  <script src="app.js"></script>
 </body>
-
 </html>

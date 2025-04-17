@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="min-h-screen flex flex-col">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anuj Gore</title>
+  <title>Anuj Gore | Projects</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class=" bg-#FEF9FF items-center justify-center font-sans">
+<body class= "items-center justify-center font-sans">
 
   <!-- Navigation Bar -->
   <header class="bg-white">
@@ -23,28 +23,38 @@
     </div>
   </header>
 
-    <main>
-        <div class="image-grid">
-            <div class="image-item-publishing">
-                <a href="https://github.com/AnujGore/Timing-Multiuser-Protocols">
-                    <img src="assets/project clipart/qamel_clip.png" alt="QAMEL">
-                    <div class="image-name">QAMEL</div>
-                </a>
-            </div>
-
-            <div class="image-item-personal">
-                <a href="https://github.com/AnujGore/DiVAS">
-                    <img src="assets/project clipart/divas-clip.png" alt="DIVAS">
-                    <div class="image-name" style="color: black">DiVAS</div>
-                </a>
-            </div>
+  <main class="px-6 py-10 bg-white flex">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+  
+      <a href="https://github.com/AnujGore/Timing-Multiuser-Protocols"
+         class="relative group border-4 border-[#D8CC34] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+        <img src="assets/project clipart/qamel_clip.png" alt="QAMEL" class="w-full h-auto group-hover:blur-sm transition-all duration-300" />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span class="text-white text-xl font-semibold bg-none bg-opacity-60 px-4 py-2 rounded">QAMEL</span>
         </div>
+      </a>
+  
+      <a href="https://github.com/AnujGore/DiVAS"
+         class="relative group border-4 border-[#090C9B] rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+        <img src="assets/project clipart/divas-clip.png" alt="DiVAS" class="w-full h-auto group-hover:blur-sm transition-all duration-300" />
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span class="text-black text-xl font-semibold bg-none bg-opacity-60 px-4 py-2 rounded">DiVAS</span>
+        </div>
+      </a>
+  
+  
+    </div>
+  </main>
 
-    </main>
-    
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 
 
+  <footer class="bg-white mt-12">
+    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-500">
+      &copy; 2025 Anuj Gore. All rights reserved.
+    </div>
+  </footer>  
+  
 </body>
 
 

@@ -52,23 +52,27 @@ document.addEventListener('DOMContentLoaded', function() {
   const blogContainer = document.getElementById("blogContainer");
 
   fetch("blog_posts.json")
-  .then(response => response.json())
-  .then(posts => {
-    blogContainer.innerHTML = "";
-    posts.forEach(post => {
+    .then(response => response.json())
+    .then(posts => {
+      blogContainer.innerHTML = "";
+  
+      posts.forEach(post => {
         const postElement = document.createElement("div");
-        postElement.classList.add("blog-post");
-
+        postElement.className = "max-w-3xl mx-auto mb-12 px-2";
+  
         postElement.innerHTML = `
-            <h3 style = "text-align: center">${post.title}</h3>
-            <p>${post.content}</p>`;
-
+          <h3 class="text-2xl font-semibold text-center mb-4">${post.title}</h3>
+          <p class="text-base leading-relaxed text-gray-800">${post.content}</p>
+        `;
+  
         blogContainer.appendChild(postElement);
-        });
-    }).catch(error => {
-        blogContainer.innerHTML = "<p>Error loading blog posts.</p>";
-        console.error("Error fetching blog posts:", error);
+      });
+    })
+    .catch(error => {
+      blogContainer.innerHTML = "<p class='text-center text-red-600'>Error loading blog posts.</p>";
+      console.error("Error fetching blog posts:", error);
     });
+  
 
 
   //For books
@@ -84,8 +88,9 @@ function loadBookstoPage(books, html_ID) {
         let div = document.createElement("div");
         div.classList.add("book");
         div.innerHTML = `
-        <img src="${book.cover}" alt="${book.title}" />
-        <p class = "rating-container">${displayRating(book.rating)}</p>`;
+        <img src="${book.cover}" alt="${book.title}" class="w-40 h-60 object-cover mb-4" />
+        <div class="w-40 text-center text-black-500 text-xl">${displayRating(book.rating)}</div>
+      `;
 
         html_ID.appendChild(div);
 
