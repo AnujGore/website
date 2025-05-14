@@ -64,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function() {
         postElement.innerHTML = `
           <h3 class="text-2xl font-semibold text-center mb-4">${post.title}</h3>
           <p class="text-base leading-relaxed text-gray-800">${post.content}</p>
-          <p class="text-base leading-relaxed text-gray-800">${post.additional}</p>}
         `;
   
         blogContainer.appendChild(postElement);
