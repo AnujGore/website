@@ -35,7 +35,7 @@ def process_new_files():
             file_date = datetime.fromtimestamp(os.path.getmtime(filepath)).strftime("%B %d, %Y")
 
             with open(filepath, "r", encoding="utf-8") as file:
-                content = file.read().strip()
+                content = file.read().strip().replace("\n", "<br>")
 
             if file_date in existing_titles:
                 continue  # Skip already added posts
