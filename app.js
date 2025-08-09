@@ -23,7 +23,9 @@ const books = [
     { cover: "assets/to_kill_a_mockingbird.jpg", rating: 3 },
     { cover: "assets/a_long_way_down.jpg", rating: 1},
     { cover: "assets/sapiens.jpg", rating: 4},
-    { cover: "assets/hotel_avocado.jpg", rating: 3},
+    { cover: "assets/hotel_avocado.jpg", rating: 2},
+    { cover: "assets/An_Absolutely_Remarkable_Thing.png", rating: 3},
+    { cover: "assets/universality.jpg", rating: 4},
 ];
 
 
